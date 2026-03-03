@@ -49,11 +49,12 @@ body{
 .header h1::before{
     position: absolute;
     content: '';
-    width: 20px;
+    width: 23px;
     height: 25px;
     background-color: hsl(43, 100%, 54%);
     border-radius: 5px;
     z-index: -1;
+    left: 1px;
 
 } 
 
@@ -85,7 +86,7 @@ body{
 }
 
 .form-itens input:focus{
-    border:  solid 1px orangered;
+    border:  solid 2px hsl(43, 100%, 74%);
 }
 
 .btn-container{
@@ -107,11 +108,13 @@ body{
     cursor: pointer;
     letter-spacing: 0.5px;
     font-family: sans-serif;
+    transition: 0.1s;
 }
 
-#btnCadastrar:hover{
+#btnCadastrar:active{
     background-color: hsl(43, 93%, 43%);
-    color: hsl(43, 100%, 95%)
+    color: hsl(43, 100%, 95%);
+    
 }
 
 .senha{
@@ -123,7 +126,7 @@ body{
     position: absolute;
     right: 8px;
     top: 25px;
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 90%);
     cursor: pointer;
 }
 
